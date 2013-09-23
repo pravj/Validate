@@ -19,7 +19,7 @@ def is_grammatical_correct(input_email):
 
 	# here valid email are in form of 'alphanumeric_or_periods(.)'@'alphabate'.'alphabate'
 
-	match = re.match(r'[a-z0-9\.]+@[a-z\.a-z]+',input_email)
+	match = re.match(r'[a-z0-9][a-z0-9\.]+@[a-z]+\.[a-z]+',input_email)
 	if(match):
 		return True
 	else:
